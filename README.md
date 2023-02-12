@@ -8,4 +8,4 @@ J'ai créé ce Github et surtout ce Wiki afin de vous permettre de pouvoir crée
 Je rajouterais au fil du temps de nouvelles astuces et explications pour que vous puissiez modifier en profondeur votre système.  
 Des fichiers utiles seront également disponible au téléchargement.
 
-[Aller sur le Wiki](https://github.com/KORSiRO/CYW/wiki)
+#>>>> [Aller sur le Wiki](https://github.com/KORSiRO/CYW/wiki) <<<<
