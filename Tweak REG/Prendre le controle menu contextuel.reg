@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+
+; Raccourci Tous les droits au clic droit sur un élément (fichier/dossier)
+; Fichiers :
+[-HKEY_CLASSES_ROOT\*\shell\Takeowner]
+[HKEY_CLASSES_ROOT\*\shell\Takeowner]
+@="Prendre le contrôle"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+
+[-HKEY_CLASSES_ROOT\*\shell\Takeowner\command]
+[HKEY_CLASSES_ROOT\*\shell\Takeowner\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /c /l' -Verb runAs\""
+"IsolatedCommand"="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" && icacls \\\"%1\\\" /grant *S-1-3-4:F /c /l' -Verb runAs\""
+
+; Dossiers :
+[-HKEY_CLASSES_ROOT\Directory\shell\Takeowner]
+[HKEY_CLASSES_ROOT\Directory\shell\Takeowner]
+@="Prendre le contrôle"
+"HasLUAShield"=""
+"NoWorkingDirectory"=""
+"Position"="middle"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Takeowner\command]
+[HKEY_CLASSES_ROOT\Directory\shell\Takeowner\command]
+@="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" /r /d o && icacls \\\"%1\\\" /grant *S-1-3-4:F /c /l /q' -Verb runAs\""
+"IsolatedCommand"="powershell -windowstyle hidden -command \"Start-Process cmd -ArgumentList '/c takeown /f \\\"%1\\\" /r /d o && icacls \\\"%1\\\" /grant *S-1-3-4:F /t /c /l /q' -Verb runAs\""
