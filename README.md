@@ -1,5 +1,4 @@
-![windows-10-iso](https://user-images.githubusercontent.com/62854582/218313505-3d6e5dec-c817-43cf-9fac-0941e50dce41.png)
-
+![windows-10-iso](https://user-images.githubusercontent.com/62854582/218313550-0ab3b271-1a4a-4d7a-bb5c-c7f80f312d1d.png)
 
 Bonjour à toutes et à tous !
 
